@@ -1,0 +1,21 @@
+server:
+  port: 80
+  #上下文路径
+  servlet:
+    context-path: /boot
+#日志配置
+logging:
+  file: logs/demo.log
+  level.*: debug
+#thymeleaf 配置
+spring:
+  thymeleaf:
+    cache: false #关闭缓存
+    mode: LEGACYHTML5 #去掉html语法校验
+  #数据库相关配置
+  datasource:
+    druid:
+      username: dcp170
+      password: dcp170
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/demo
