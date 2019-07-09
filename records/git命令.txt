@@ -1,0 +1,34 @@
+1.初始化
+	git init
+2.设置用户名
+	git --global user.name <your name>
+3.设置emai
+	git --global user.email <your email>
+4.添加文件
+	1）跟踪文件
+		git add <your file>
+	2)提交
+		git commit -m <注释信息>
+5.查看日志：
+	git log --pretty=oneline
+6.查看是否有未提交内容
+	git status
+7.查看修改的内容
+	git diff file name
+8.版本回退
+	git reset --hard HEAD^
+	git reset --hard <commit id>
+9.撤销修改
+	git checkout --<file name>
+10.删除文件
+	1）删除工作区中的文件
+	2）git rm <file name>
+	3)git commit -m <注释信息>
+11.生成密钥
+	ssh-keygen -t rsa -C "<email>"
+12.关联远程仓库
+ 	git remote add origin <email/仓库名>
+13.提交内容
+	git push -u origin master
+14.复制远程仓库代码
+	git clone <仓库地址>
