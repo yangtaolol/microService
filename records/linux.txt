@@ -1,0 +1,14 @@
+ln <sorce folder> :与目标目录建立连接（快捷方式）
+stat <file/folder> 显示目标文件或者文件夹的详细信息
+top（可查看内存使用情况）
+	-u username :指定用户的进程
+	-p pid : 指定pid的进程
+df [fileName]显示磁盘使用情况,不加fileName 表示总体使用情况，加上表示该问价所属文件系统使用情况
+free ：查看可用磁盘空间
+tar:
+	-c 压缩
+	-x 解压缩
+	-z 用gzip压缩（.gz结尾）
+	-j bzip2压缩（.bz2结尾）
+	-v 显示文件
+	-f 自定以压缩文件名
