@@ -12,10 +12,11 @@ spring:
   thymeleaf:
     cache: false #关闭缓存
     mode: LEGACYHTML5 #去掉html语法校验
-  #数据库相关配置
-  datasource:
-    druid:
-      username: dcp170
-      password: dcp170
-      driver-class-name: com.mysql.jdbc.Driver
-      url: jdbc:mysql://localhost:3306/demo
+  #指定profile
+  profiles:
+    active: company
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.yangtao.demo.model
+
+
