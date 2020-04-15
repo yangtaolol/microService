@@ -1,0 +1,19 @@
+
+server:
+  port: 9000
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://admin:123456@localhost:9000/eureka/
+spring:
+  application:
+    name: defaultClient
+  security:
+    user:
+      name: admin
+      password: 123456
+ribbon:
+  eureka:
+    enabled: false

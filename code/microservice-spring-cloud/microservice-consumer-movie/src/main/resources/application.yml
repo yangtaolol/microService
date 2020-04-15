@@ -1,0 +1,19 @@
+
+server:
+  port: 9002
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://admin:123456@localhost:9000/eureka/
+  instance:
+    prefer-ip-address: true
+spring:
+  application:
+    name: microservice-consumer-movie
+
+#ribbon配置 （第一级为请求服务名，优先级高于代码配置）
+#microservice-provider-user:
+#  ribbon:
+#    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+
+
