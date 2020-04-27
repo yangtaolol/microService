@@ -1,17 +1,5 @@
 server:
   port: 9001
-spring:
-  jpa:
-    generate-ddl: false
-    show-sql: true
-    hibernate:
-      ddl-auto: none
-  datasource:
-    platform: h2
-    schema: classpath:schema.sql
-    data: classpath:data.sql
-  application:
-    name: microservice-provider-user
 eureka:
   client:
     serviceUrl:

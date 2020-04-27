@@ -16,7 +16,7 @@ public class UserController {
 
     @GetMapping("/{id}")
     public User getUser(@PathVariable Long id) {
-        return userDao.findById(id).get();
+        return userDao.findById(id);
     }
 
     @PostMapping("/isExist")
