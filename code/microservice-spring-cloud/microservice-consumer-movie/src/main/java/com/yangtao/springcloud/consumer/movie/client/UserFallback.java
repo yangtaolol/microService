@@ -4,7 +4,7 @@ import com.yangtao.springcloud.consumer.movie.model.User;
 import org.springframework.stereotype.Component;
 
 
-@Component(value = "userFallback")
+@Component
 public class UserFallback implements UserClient {
 
     @Override

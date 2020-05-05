@@ -14,6 +14,9 @@ spring:
 #ribbon配置 （第一级为请求服务名，优先级高于代码配置）
 #microservice-provider-user:
 #  ribbon:
-#    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+#    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRuleh
 
+feign:
+  hystrix:
+    enabled: true
 
